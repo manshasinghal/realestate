@@ -1,0 +1,31 @@
+.c-container{
+    justify-content: space-around;
+    gap: 1rem;
+}
+.c-container>img{
+    width: 9rem;
+    
+}
+.companyText{
+    color: white;
+    margin-left: 36rem;
+}
+.companyText2{
+    color: gray;
+    margin-left: 28rem;
+    margin-top: 10px;
+}
+@media (max-width: 1024px) {
+  .c-text{
+    margin-left: -30rem;
+  }
+  .companyText2{
+     visibility: hidden;
+  }
+ .company{
+    margin-top: 50px;
+ }
+  .c-container{
+    margin-top: -30px;
+  } 
+}

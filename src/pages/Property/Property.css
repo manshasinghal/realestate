@@ -1,0 +1,130 @@
+.property-container{
+    gap: 2rem;
+    position: relative;
+}
+
+.property-container .like{
+    position: absolute;
+    top: 4rem;
+    left: 40rem;
+    cursor: pointer;
+}
+.property-container .img1{
+    align-self: flex-start;
+    max-height: 28rem;
+    width: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+.box{
+    border-radius: 8px;
+    background-color: rgb(247, 247, 247);
+    height: 40px;
+    padding: 10px 20px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+}
+.box:hover{
+    color: red;
+}
+.des{
+    margin-left: 10px;
+}
+.style{
+    margin-top: 20px;
+}
+.property-container .img2,
+.property-container .img3,
+.property-container .img4,
+.property-container .img5{
+    width: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.img-pos{
+    display: flex;
+    
+}
+.img-col{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    max-height: 28rem;
+    border-radius: 1rem;
+}
+.img-row{
+    display: flex;
+}
+.property-details{
+    width: 100%;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.property-details>div{
+    flex: 1;
+    gap: 1.5rem;
+}
+
+.property-details .left .head{
+    justify-content: space-between;
+    width: 100%;
+}
+
+.facilities{
+    gap: 1rem;
+    font-size: 0.9rem;
+    padding: 1rem;
+}
+
+.facility{
+    gap: 0.5rem;
+}
+
+.property-details .button{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.property-details .button:hover{
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 700px) {
+    .property-container>div{
+        flex-direction: column;
+    }
+    .head{
+        flex-direction: column;
+    }
+    .facilities{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .property-details>div{
+        width: 100%;
+    }
+    .img-pos{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .img-col{
+        margin-left:0;
+        margin-top: 3rem;
+    }
+    .property-container .img1{
+        max-height: 20rem;
+        width: 100%;
+        object-fit: cover;
+        margin-top: 10px;
+    }
+    .property-container .like{
+        position: absolute;
+        top: 3rem;
+        left: 20rem;
+        cursor: pointer;
+    }
+}
